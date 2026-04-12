@@ -108,3 +108,9 @@ remedio-na-hora/
 ├── requirements.txt            # Dependências do projeto
 ├── VERSION                     # Controle de versão
 └── README.md
+
+## Demonstração do Projeto
+
+<p align="center">
+  <img src="Demo.gif" alt="Remédio na Hora Certa - Demonstração" width="700"/>
+</p>
