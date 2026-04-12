@@ -78,26 +78,17 @@ Este projeto é voltado para:
 
 ## Demonstração
 
-A aplicação possui uma demonstração visual disponível no arquivo abaixo, localizado na raiz do repositório:
+Abaixo está uma demonstração visual da aplicação em funcionamento:
 
-`demo.gif`
+<p align="center">
+  <img src="demo.gif" alt="Demonstração do Remédio na Hora Certa" width="700">
+</p>
 
-Esse arquivo mostra o funcionamento do sistema no terminal, evidenciando as principais funcionalidades da aplicação.
+---
 
-### Funcionalidades demonstradas
-
-- cadastro de medicamentos;
-- visualização da lista de medicamentos;
-- marcação de remédio como tomado;
-- remoção de medicamento da rotina.
-
-### Executando localmente
+## Estrutura do Projeto
 
 ```bash
-python src/cli.py
-
-```
-
 remedio-na-hora/
 ├── .github/
 │   └── workflows/
