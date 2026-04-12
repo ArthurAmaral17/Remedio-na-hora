@@ -1,7 +1,7 @@
 # 💊 Remédio na Hora Certa
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![CI](https://github.com/ArthurAmaral17/remedio-na-hora/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/ArthurAmaral17/Remedio-na-hora/actions/workflows/main.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Python](https://img.shields.io/badge/python-3.10+-yellow)
 
