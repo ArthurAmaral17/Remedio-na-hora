@@ -111,6 +111,19 @@ remedio-na-hora/
 
 ## Demonstração do Projeto
 
+## 🖥️ Demonstração
+
+Veja abaixo a aplicação em funcionamento diretamente no terminal:
+
 <p align="center">
-  <img src="Demo.gif" alt="Remédio na Hora Certa - Demonstração" width="700"/>
+  <img src="./assets/demo.gif" alt="Demonstração do sistema Remédio na Hora Certa" width="700">
 </p>
+
+### 💡 Fluxo da aplicação
+
+A demonstração mostra:
+
+- Cadastro de um medicamento
+- Visualização da lista em formato de tabela
+- Marcação de medicamento como tomado
+- Interface interativa via terminal
