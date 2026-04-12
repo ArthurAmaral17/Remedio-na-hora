@@ -93,5 +93,29 @@ Esse arquivo mostra o funcionamento do sistema no terminal, evidenciando as prin
 
 ### Executando localmente
 
+
+
 ```bash
 python src/cli.py
+
+
+```bash
+remedio-na-hora/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── src/
+│   ├── __init__.py
+│   ├── cli.py
+│   ├── models.py
+│   └── services.py
+├── tests/
+│   ├── __init__.py
+│   └── test_services.py
+├── .gitignore
+├── requirements.txt
+├── VERSION
+├── demo.gif
+└── README.md
+
+```
