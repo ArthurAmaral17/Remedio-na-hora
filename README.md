@@ -74,6 +74,8 @@ pytest
 pylint src tests
 🔢 Versão
 1.0.0
+```
+
 👨‍💻 Autor
 
 Arthur Amaral
