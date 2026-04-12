@@ -39,7 +39,6 @@ O projeto Remédio na Hora Certa foi desenvolvido para auxiliar no controle de m
 - Pytest
 - Pylint
 - GitHub Actions
-- 
 ---
 
 ## 🚀 Instruções de Instalação
