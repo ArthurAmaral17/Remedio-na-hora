@@ -61,7 +61,7 @@ source venv/bin/activate
 Instale as dependências:
 pip install -r requirements.txt
 
-🖥️ Instruções de Execução
+## 🖥️ Instruções de Execução
 Com o ambiente virtual ativado e estando na raiz do projeto, execute:
 
 python -m src.cli
@@ -78,7 +78,7 @@ O sistema abrirá um menu interativo com as seguintes opções:
 
 5 - Sair do sistema
 
-🧪 Instruções para Rodar os Testes
+## 🧪 Instruções para Rodar os Testes
 O projeto possui 5 testes automatizados validando os principais comportamentos do sistema.
 
 Para executá-los, use:
@@ -87,7 +87,7 @@ pytest tests/ -v
 
 Saída esperada: 5 testes passando com sucesso (todos PASSED).
 
-🔍 Instruções para Rodar o Lint
+## 🔍 Instruções para Rodar o Lint
 A qualidade do código é verificada com Pylint (nota atual: 8.17/10).
 
 Para executar a análise estática:
