@@ -30,31 +30,42 @@ O projeto Remédio na Hora Certa foi desenvolvido para auxiliar no controle de m
 - Pylint
 - GitHub Actions
 
-## Instruções de Instalação
-1. Clone o repositório:
-```bash
-git clone https://github.com/ArthurAmaral17/remedio-na-hora.git
-Acesse a pasta do projeto:
+# Remédio na Hora
+
+Aplicação para auxiliar no controle de horários de medicamentos.
+
+---
+
+## 🚀 Instalação
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/ArthurAmaral17/remedio-na-hora.git
+Acesse a pasta do projeto
+
+bash
 cd remedio-na-hora
-Instale as dependências:
+Instale as dependências
+
+bash
 pip install -r requirements.txt
-Instruções de Execução
+▶️ Execução
+Para executar o projeto, utilize:
 
-Para executar o projeto, use:
-
+bash
 python src/cli.py
-Instruções para Rodar os Testes
+🧪 Testes
+Para rodar os testes:
 
-Para executar os testes, use:
-
+bash
 pytest
-Instruções para Rodar o Lint
+🧹 Lint
+Para rodar a análise estática de código:
 
-Para rodar a análise estática de código, use:
-
+bash
 pylint src
 
-````
+
 ## Versão Atual
 **1.0.0**
 
