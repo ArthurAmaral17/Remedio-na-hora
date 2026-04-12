@@ -90,6 +90,8 @@ Este projeto é voltado para:
 
 ## 📂 Estrutura do Projeto
 
+## 📂 Estrutura do Projeto
+
 ```bash
 remedio-na-hora/
 ├── .github/
@@ -107,6 +109,7 @@ remedio-na-hora/
 ├── .pylintrc                   # Configurações do Pylint
 ├── requirements.txt            # Dependências do projeto
 ├── VERSION                     # Controle de versão
+├── demo.gif
 └── README.md
 
 ## Demonstração do Projeto
@@ -115,9 +118,8 @@ remedio-na-hora/
 
 Veja abaixo a aplicação em funcionamento diretamente no terminal:
 
-<p align="center">
-  <img src="demo.gif" alt="Demonstração do sistema Remédio na Hora Certa" width="700">
-</p>
+```md
+<img src="demo.gif" alt="Demonstração do sistema Remédio na Hora Certa" width="700">
 
 ### 💡 Fluxo da aplicação
 
