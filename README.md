@@ -3,6 +3,16 @@
 ## Nome do Projeto
 Remédio na Hora Certa
 
+## Demonstração
+
+Abaixo está uma demonstração visual da aplicação em funcionamento:
+
+<p align="center">
+  <img src="./demo.gif" alt="Demonstração do Remédio na Hora Certa" width="700">
+</p>
+
+---
+
 ## Descrição do Problema Real
 O esquecimento de horários de medicamentos é um problema real que pode comprometer a saúde e a qualidade de vida de muitas pessoas. Isso acontece com frequência entre idosos, cuidadores, pessoas com doenças crônicas e pacientes que fazem uso contínuo de remédios. A falta de controle pode causar doses esquecidas, administração duplicada, falhas no tratamento e agravamento do quadro clínico.
 
