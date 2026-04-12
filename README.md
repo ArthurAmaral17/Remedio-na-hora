@@ -36,34 +36,71 @@ Aplicação para auxiliar no controle de horários de medicamentos.
 
 ---
 
-## 🚀 Instalação
+🚀 Instruções de Instalação
+Pré-requisitos
+Python 3.8 ou superior
 
-1. **Clone o repositório**
-   ```bash
-   git clone https://github.com/ArthurAmaral17/remedio-na-hora.git
-Acesse a pasta do projeto
+pip (gerenciador de pacotes do Python)
+
+Git (opcional)
+
+Passo a Passo
+Clone o repositório:
+
+bash
+git clone https://github.com/ArthurAmaral17/remedio-na-hora.git
+Acesse a pasta do projeto:
 
 bash
 cd remedio-na-hora
-Instale as dependências
+Crie e ative um ambiente virtual (recomendado):
+
+bash
+python -m venv venv
+
+# Windows:
+venv\Scripts\activate
+
+# Mac/Linux:
+source venv/bin/activate
+Instale as dependências:
 
 bash
 pip install -r requirements.txt
-▶️ Execução
-Para executar o projeto, utilize:
+🖥️ Instruções de Execução
+Com o ambiente virtual ativado e estando na raiz do projeto, execute:
 
 bash
-python src/cli.py
-🧪 Testes
-Para rodar os testes:
+python -m src.cli
+O sistema abrirá um menu interativo com as seguintes opções:
+
+1 - Adicionar novo medicamento
+
+2 - Listar medicamentos cadastrados
+
+3 - Marcar medicamento como tomado
+
+4 - Remover medicamento
+
+5 - Sair do sistema
+
+🧪 Instruções para Rodar os Testes
+O projeto possui 5 testes automatizados validando os principais comportamentos do sistema.
+
+Para executá-los, use:
 
 bash
-pytest
-🧹 Lint
-Para rodar a análise estática de código:
+pytest tests/ -v
+Saída esperada: 5 testes passando com sucesso (todos PASSED).
+
+🔍 Instruções para Rodar o Lint
+A qualidade do código é verificada com Pylint (nota atual: 8.17/10).
+
+Para executar a análise estática:
 
 bash
 pylint src
+A configuração personalizada está no arquivo .pylintrc na raiz do projeto.
 
 
 ## Versão Atual
