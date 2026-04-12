@@ -1,93 +1,97 @@
-# 💊 Remédio na Hora Certa
+# Remédio na Hora Certa
 
-<p align="center">
-  <img src="demo.gif" width="600">
-</p>
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.0.0-blue)
+![Python](https://img.shields.io/badge/python-3.10%2B-yellow)
+![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-green)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0-blue">
-  <img src="https://img.shields.io/badge/python-3.10+-yellow">
-  <img src="https://img.shields.io/badge/license-MIT-green">
-</p>
+## Sobre o Projeto
 
----
+O **Remédio na Hora Certa** é uma aplicação de linha de comando (CLI) desenvolvida para auxiliar no controle de medicamentos, permitindo cadastrar, visualizar, marcar como tomado e remover remédios de forma simples e prática.
 
-## 📌 Sobre
-
-O **Remédio na Hora Certa** é uma aplicação CLI feita para ajudar no controle de medicamentos, evitando esquecimentos e erros na rotina de tratamento.
-
-Pensado principalmente para:
-- idosos  
-- cuidadores  
-- pessoas com uso contínuo de medicamentos  
+A proposta do projeto é oferecer uma solução acessível para pessoas que precisam acompanhar tratamentos contínuos, especialmente em cenários em que o esquecimento de horários pode comprometer a saúde e a qualidade de vida.
 
 ---
 
-## 🎯 Problema
+## Problema Real
 
-Esquecer horários de remédios ou tomar doses duplicadas é mais comum do que parece — e pode gerar complicações sérias.
+O esquecimento de horários de medicamentos é uma dor real que afeta principalmente:
 
----
+- idosos que utilizam vários medicamentos diariamente;
+- cuidadores familiares que acompanham rotinas de tratamento;
+- pessoas com doenças crônicas;
+- pacientes em uso contínuo de remédios.
 
-## 🚀 Solução
+Essas situações podem gerar:
 
-Uma ferramenta simples no terminal que permite:
-
-- cadastrar medicamentos  
-- visualizar lista com status  
-- marcar como tomado  
-- remover itens  
-
-Tudo rápido, direto e sem depender de internet.
-
----
-
-## ⚙️ Funcionalidades
-
-- Cadastro de medicamentos com horário  
-- Listagem em tabela (Rich)  
-- Marcação de dose como tomada  
-- Remoção de medicamentos  
+- doses esquecidas;
+- administração duplicada;
+- falhas no tratamento;
+- agravamento do quadro clínico.
 
 ---
 
-## 🛠️ Tecnologias
+## Solução Proposta
 
-- Python 3.10+
-- Rich
-- Pytest
-- Pylint
+A aplicação foi criada para facilitar o gerenciamento de medicamentos por meio de uma interface CLI simples e intuitiva.
+
+Com ela, o usuário pode:
+
+- cadastrar medicamentos e horários;
+- visualizar a lista de remédios com status atualizado;
+- marcar medicamentos como tomados;
+- remover medicamentos da rotina.
+
+Tudo isso diretamente no terminal, sem depender de internet.
 
 ---
 
-## 🚀 Instalação
+## Público-Alvo
+
+Este projeto é voltado para:
+
+- idosos;
+- cuidadores;
+- profissionais de saúde;
+- qualquer pessoa que precise de um controle simples de medicamentos.
+
+---
+
+## Funcionalidades
+
+- Cadastro de medicamentos com nome e horário
+- Listagem dos medicamentos cadastrados
+- Marcação de medicamento como tomado
+- Remoção de medicamento
+- Interface visual no terminal com a biblioteca Rich
+
+---
+
+## Tecnologias Utilizadas
+
+- **Python 3.10+**
+- **Rich**
+- **Pytest**
+- **Pylint**
+- **GitHub Actions**
+
+---
+
+## Estrutura do Projeto
 
 ```bash
-git clone https://github.com/ArthurAmaral17/remedio-na-hora.git
-cd remedio-na-hora
-pip install -r requirements.txt
-▶️ Execução
-python src/cli.py
-🧪 Testes
-pytest
-✅ Lint
-pylint src tests
-🔢 Versão
-1.0.0
-```
-
----
-
-## 👨‍💻 Autor
-
-<p align="center">
-  <strong>Arthur Amaral</strong>
-</p>
-
----
-
-## 📄 Licença
-
-<p align="center">
-  MIT
-</p>
+remedio-na-hora/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── src/
+│   ├── __init__.py
+│   ├── cli.py
+│   ├── models.py
+│   └── services.py
+├── tests/
+│   ├── __init__.py
+│   └── test_services.py
+├── .gitignore
+├── requirements.txt
+├── VERSION
+└── README.md
