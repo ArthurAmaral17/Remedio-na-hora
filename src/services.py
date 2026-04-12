@@ -1,6 +1,7 @@
 from typing import List
 from src.models import Medicamento
 
+
 class ControleMedicamentos:
     def __init__(self):
         self.medicamentos: List[Medicamento] = []
