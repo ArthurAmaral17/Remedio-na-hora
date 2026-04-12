@@ -29,15 +29,12 @@ O projeto Remédio na Hora Certa foi desenvolvido para auxiliar no controle de m
 - Pytest
 - Pylint
 - GitHub Actions
-
-# Remédio na Hora
-
-Aplicação para auxiliar no controle de horários de medicamentos.
-
+- 
 ---
 
 🚀 Instruções de Instalação
 Pré-requisitos
+
 Python 3.8 ou superior
 
 pip (gerenciador de pacotes do Python)
@@ -45,33 +42,30 @@ pip (gerenciador de pacotes do Python)
 Git (opcional)
 
 Passo a Passo
+
 Clone o repositório:
-
-bash
 git clone https://github.com/ArthurAmaral17/remedio-na-hora.git
+
 Acesse a pasta do projeto:
-
-bash
 cd remedio-na-hora
-Crie e ative um ambiente virtual (recomendado):
 
-bash
+Crie e ative um ambiente virtual (recomendado):
 python -m venv venv
 
-# Windows:
+No Windows:
 venv\Scripts\activate
 
-# Mac/Linux:
+No Mac/Linux:
 source venv/bin/activate
-Instale as dependências:
 
-bash
+Instale as dependências:
 pip install -r requirements.txt
+
 🖥️ Instruções de Execução
 Com o ambiente virtual ativado e estando na raiz do projeto, execute:
 
-bash
 python -m src.cli
+
 O sistema abrirá um menu interativo com as seguintes opções:
 
 1 - Adicionar novo medicamento
@@ -89,8 +83,8 @@ O projeto possui 5 testes automatizados validando os principais comportamentos d
 
 Para executá-los, use:
 
-bash
 pytest tests/ -v
+
 Saída esperada: 5 testes passando com sucesso (todos PASSED).
 
 🔍 Instruções para Rodar o Lint
@@ -98,10 +92,9 @@ A qualidade do código é verificada com Pylint (nota atual: 8.17/10).
 
 Para executar a análise estática:
 
-bash
 pylint src
-A configuração personalizada está no arquivo .pylintrc na raiz do projeto.
 
+A configuração personalizada está no arquivo .pylintrc na raiz do projeto.
 
 ## Versão Atual
 **1.0.0**
