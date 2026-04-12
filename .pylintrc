@@ -1,0 +1,13 @@
+[MASTER]
+ignore=venv
+
+[MESSAGES CONTROL]
+disable=
+    C0114,
+    C0115,
+    C0116,
+    C0301,
+    C0304
+
+[FORMAT]
+max-line-length=100

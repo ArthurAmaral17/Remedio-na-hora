@@ -113,4 +113,5 @@ A configuração personalizada está no arquivo .pylintrc na raiz do projeto.
 **Arthur Amaral dos Santos**
 
 ## Link do Repositório Público
+
 [GitHub - Remédio na Hora Certa](https://github.com/ArthurAmaral17/remedio-na-hora)
