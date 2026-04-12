@@ -3,7 +3,7 @@
 ![Versão](https://img.shields.io/badge/versão-1.0.0-blue)
 ![Python](https://img.shields.io/badge/Python-3.10+-yellow)
 ![Licença](https://img.shields.io/badge/licença-MIT-green)
-![CI Status](https://github.com/ArthurAmaral17/remedio-na-hora/actions/workflows/ci.yml/badge.svg)
+![Versão](https://img.shields.io/badge/versão-1.0.0-blue)
 
 ## 📖 Sobre o Projeto
 
