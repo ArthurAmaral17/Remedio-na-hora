@@ -92,7 +92,6 @@ Este projeto é voltado para:
 
 ## 📂 Estrutura do Projeto
 
-```bash
 remedio-na-hora/
 ├── .github/
 │   └── workflows/
@@ -111,6 +110,8 @@ remedio-na-hora/
 ├── VERSION                     # Controle de versão
 ├── demo.gif
 └── README.md
+
+---
 
 ## 🖥️ Demonstração
 
