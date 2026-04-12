@@ -116,7 +116,7 @@ remedio-na-hora/
 Veja abaixo a aplicação em funcionamento diretamente no terminal:
 
 <p align="center">
-  <img src="./assets/demo.gif" alt="Demonstração do sistema Remédio na Hora Certa" width="700">
+  <img src="demo.gif" alt="Demonstração do sistema Remédio na Hora Certa" width="700">
 </p>
 
 ### 💡 Fluxo da aplicação
@@ -124,6 +124,6 @@ Veja abaixo a aplicação em funcionamento diretamente no terminal:
 A demonstração mostra:
 
 - Cadastro de um medicamento
-- Visualização da lista em formato de tabela
-- Marcação de medicamento como tomado
-- Interface interativa via terminal
+- Visualização da lista em tabela
+- Marcação como tomado
+- Uso completo via terminal
