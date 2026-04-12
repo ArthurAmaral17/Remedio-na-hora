@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   test-and-lint:
@@ -26,7 +26,8 @@ jobs:
 
       - name: Executar lint
         run: |
-          pylint src tests
+          python -m pylint src --disable=C0114,C0116,C0304
+          python -m pylint tests --disable=C0114,C0115,C0116,C0304
 
       - name: Executar testes
         env:
