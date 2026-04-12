@@ -1,109 +1,65 @@
 # Remédio na Hora Certa
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.0.0-blue)
-![Python](https://img.shields.io/badge/python-3.10%2B-yellow)
-![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-green)
+## Nome do Projeto
+Remédio na Hora Certa
 
-## Sobre o Projeto
+## Descrição do Problema Real
+O esquecimento de horários de medicamentos é um problema real que pode comprometer a saúde e a qualidade de vida de muitas pessoas. Isso acontece com frequência entre idosos, cuidadores, pessoas com doenças crônicas e pacientes que fazem uso contínuo de remédios. A falta de controle pode causar doses esquecidas, administração duplicada, falhas no tratamento e agravamento do quadro clínico.
 
-O **Remédio na Hora Certa** é uma aplicação de linha de comando (CLI) desenvolvida para auxiliar no controle de medicamentos, permitindo cadastrar, visualizar, marcar como tomado e remover remédios de forma simples e prática.
-
-A proposta do projeto é oferecer uma solução acessível para pessoas que precisam acompanhar tratamentos contínuos, especialmente em cenários em que o esquecimento de horários pode comprometer a saúde e a qualidade de vida.
-
----
-
-## Problema Real
-
-O esquecimento de horários de medicamentos é uma dor real que afeta principalmente:
-
-- idosos que utilizam vários medicamentos diariamente;
-- cuidadores familiares que acompanham rotinas de tratamento;
-- pessoas com doenças crônicas;
-- pacientes em uso contínuo de remédios.
-
-Essas situações podem gerar:
-
-- doses esquecidas;
-- administração duplicada;
-- falhas no tratamento;
-- agravamento do quadro clínico.
-
----
-
-## Solução Proposta
-
-A aplicação foi criada para facilitar o gerenciamento de medicamentos por meio de uma interface CLI simples e intuitiva.
-
-Com ela, o usuário pode:
-
-- cadastrar medicamentos e horários;
-- visualizar a lista de remédios com status atualizado;
-- marcar medicamentos como tomados;
-- remover medicamentos da rotina.
-
-Tudo isso diretamente no terminal, sem depender de internet.
-
----
+## Proposta da Solução
+O projeto Remédio na Hora Certa foi desenvolvido para auxiliar no controle de medicamentos de forma simples e prática. A aplicação permite cadastrar remédios, visualizar a lista dos medicamentos registrados, marcar quais já foram tomados e remover registros quando necessário. A proposta é oferecer uma solução acessível e funcional para ajudar na organização da rotina de medicação.
 
 ## Público-Alvo
+- Idosos
+- Cuidadores
+- Pessoas com doenças crônicas
+- Pacientes em uso contínuo de medicamentos
+- Pessoas que precisam de um controle simples de remédios
 
-Este projeto é voltado para:
-
-- idosos;
-- cuidadores;
-- profissionais de saúde;
-- qualquer pessoa que precise de um controle simples de medicamentos.
-
----
-
-## Funcionalidades
-
+## Funcionalidades Principais
 - Cadastro de medicamentos com nome e horário
 - Listagem dos medicamentos cadastrados
 - Marcação de medicamento como tomado
 - Remoção de medicamento
-- Interface visual no terminal com a biblioteca Rich
-
----
+- Interface visual no terminal
 
 ## Tecnologias Utilizadas
+- Python 3.10+
+- Rich
+- Pytest
+- Pylint
+- GitHub Actions
 
-- **Python 3.10+**
-- **Rich**
-- **Pytest**
-- **Pylint**
-- **GitHub Actions**
-
----
-
-## Demonstração
-
-Abaixo está uma demonstração visual da aplicação em funcionamento:
-
-<p align="center">
-  <img src="demo.gif" alt="Demonstração do Remédio na Hora Certa" width="700">
-</p>
-
----
-
-## Estrutura do Projeto
-
+## Instruções de Instalação
+1. Clone o repositório:
 ```bash
-remedio-na-hora/
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-├── src/
-│   ├── __init__.py
-│   ├── cli.py
-│   ├── models.py
-│   └── services.py
-├── tests/
-│   ├── __init__.py
-│   └── test_services.py
-├── .gitignore
-├── requirements.txt
-├── VERSION
-├── demo.gif
-└── README.md
+git clone https://github.com/ArthurAmaral17/remedio-na-hora.git
+Acesse a pasta do projeto:
+cd remedio-na-hora
+Instale as dependências:
+pip install -r requirements.txt
+Instruções de Execução
 
+Para executar o projeto, use:
+
+python src/cli.py
+Instruções para Rodar os Testes
+
+Para executar os testes, use:
+
+pytest
+Instruções para Rodar o Lint
+
+Para rodar a análise estática de código, use:
+
+pylint src
+
+````
+## Versão Atual
+**1.0.0**
+
+## Nome do Autor
+**Arthur Amaral dos Santos**
+
+## Link do Repositório Público
+[GitHub - Remédio na Hora Certa](https://github.com/ArthurAmaral17/remedio-na-hora)
