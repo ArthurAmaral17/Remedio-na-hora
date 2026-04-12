@@ -32,7 +32,7 @@ O projeto Remédio na Hora Certa foi desenvolvido para auxiliar no controle de m
 - 
 ---
 
-🚀 Instruções de Instalação
+## 🚀 Instruções de Instalação
 Pré-requisitos
 
 Python 3.8 ou superior
