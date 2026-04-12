@@ -93,13 +93,11 @@ Esse arquivo mostra o funcionamento do sistema no terminal, evidenciando as prin
 
 ### Executando localmente
 
-
-
 ```bash
 python src/cli.py
 
+```
 
-```bash
 remedio-na-hora/
 ├── .github/
 │   └── workflows/
@@ -117,5 +115,3 @@ remedio-na-hora/
 ├── VERSION
 ├── demo.gif
 └── README.md
-
-```
