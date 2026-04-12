@@ -118,8 +118,9 @@ remedio-na-hora/
 
 Veja abaixo a aplicação em funcionamento diretamente no terminal:
 
-```md
-<img src="demo.gif" alt="Demonstração do sistema Remédio na Hora Certa" width="700">
+## 🖥️ Demonstração
+
+![Demonstração do sistema](demo.gif)
 
 ### 💡 Fluxo da aplicação
 
