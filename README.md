@@ -1,147 +1,110 @@
-\# 💊 Remédio na Hora Certa
+# 💊 Remédio na Hora Certa
 
+![Versão](https://img.shields.io/badge/versão-1.0.0-blue)
+![Python](https://img.shields.io/badge/Python-3.10+-yellow)
+![Licença](https://img.shields.io/badge/licença-MIT-green)
+![CI Status](https://github.com/ArthurAmaral17/remedio-na-hora/actions/workflows/ci.yml/badge.svg)
 
+## 📖 Sobre o Projeto
 
-!\[Versão](https://img.shields.io/badge/versão-1.0.0-blue)
+O **Remédio na Hora Certa** é uma aplicação de linha de comando (CLI) desenvolvida para auxiliar no **controle de medicamentos**, permitindo cadastrar, visualizar, marcar como tomado e remover remédios de forma simples e prática.
 
-!\[Python](https://img.shields.io/badge/Python-3.10+-yellow)
+A proposta do projeto é oferecer uma solução acessível para pessoas que precisam acompanhar tratamentos contínuos, especialmente em cenários em que o esquecimento de horários pode comprometer a saúde e a qualidade de vida.
 
-!\[Licença](https://img.shields.io/badge/licença-MIT-green)
+---
 
-!\[CI Status](https://github.com/ArthurAmaral17/remedio-na-hora/actions/workflows/ci.yml/badge.svg)
+## 📌 Problema Real
 
+O esquecimento de horários de medicamentos é uma das principais causas de complicações em tratamentos de saúde, principalmente entre:
 
+- **Idosos** que utilizam vários medicamentos diariamente
+- **Cuidadores familiares** que precisam gerenciar múltiplas prescrições
+- **Pessoas com doenças crônicas**, como hipertensão e diabetes
+- **Profissionais de home care** que acompanham pacientes em rotina contínua
 
-\## 📌 Descrição do Problema Real
+Essas situações podem resultar em:
 
+- doses esquecidas
+- administração duplicada
+- falhas no acompanhamento do tratamento
+- agravamento do quadro clínico
 
+---
 
-O esquecimento de horários de medicamentos é uma das principais causas de complicações de saúde em idosos e pessoas com rotinas de tratamento contínuo. Muitos cuidadores familiares também enfrentam dificuldades em gerenciar múltiplas prescrições, resultando em \*\*doses perdidas ou duplicadas\*\* que podem agravar quadros clínicos.
+## 🎯 Solução Proposta
 
+O **Remédio na Hora Certa** foi criado para facilitar o gerenciamento de medicamentos por meio de uma interface CLI intuitiva, organizada e visualmente amigável.
 
+Com ele, o usuário pode:
 
-\*\*Quem é afetado?\*\*
+- cadastrar medicamentos e horários
+- visualizar a lista de remédios com status atualizado
+- marcar doses como administradas
+- remover medicamentos quando necessário
 
-\- Idosos que fazem uso de múltiplos medicamentos diários
+Tudo isso diretamente no terminal, sem depender de internet ou hardware específico.
 
-\- Cuidadores familiares sobrecarregados
+---
 
-\- Pessoas com doenças crônicas (hipertensão, diabetes, etc.)
+## 👥 Público-Alvo
 
-\- Profissionais de home care
+Este projeto é voltado para:
 
+- idosos
+- cuidadores familiares
+- profissionais de saúde
+- qualquer pessoa que precise de um controle simples e confiável de medicamentos
 
+---
 
-\## 🎯 Proposta da Solução
+## ⚙️ Funcionalidades
 
+- ✅ **Cadastro de medicamentos**  
+  Permite registrar o nome e o horário de cada remédio.
 
+- 📋 **Listagem visual**  
+  Exibe os medicamentos em tabela formatada com status como **Pendente** ou **Tomado**.
 
-O \*\*Remédio na Hora Certa\*\* é uma aplicação CLI (Interface de Linha de Comando) com \*\*interface rica e intuitiva\*\* que permite o cadastro, visualização e controle de medicamentos de forma simples e eficiente. A ferramenta foi desenvolvida para ser executada em qualquer terminal, sem necessidade de internet ou hardware especial.
+- ✔️ **Marcação de doses**  
+  Possibilita confirmar quando um medicamento foi administrado.
 
+- 🗑️ **Remoção de medicamentos**  
+  Remove itens que não fazem mais parte da rotina do usuário.
 
+- 🎨 **Interface rica no terminal**  
+  Utiliza a biblioteca **Rich** para melhorar a experiência visual com cores, painéis e tabelas.
 
-\*\*Público-alvo:\*\* Idosos, cuidadores familiares, profissionais de saúde e qualquer pessoa que necessite de um controle simples e confiável de medicamentos.
+---
 
-
-
-\## ⚙️ Funcionalidades Principais
-
-
-
-\- ✅ \*\*Cadastro de Medicamentos:\*\* Registre nome e horário de cada remédio
-
-\- 📋 \*\*Listagem Visual:\*\* Tabela formatada com status (Pendente/Tomado)
-
-\- ✔️ \*\*Marcação de Doses:\*\* Confirme quando um medicamento foi administrado
-
-\- 🗑️ \*\*Remoção de Itens:\*\* Exclua medicamentos que não são mais necessários
-
-\- 🎨 \*\*Interface Rica:\*\* Utiliza a biblioteca `Rich` para cores, painéis e tabelas formatadas
-
-
-
-\## 🛠️ Tecnologias Utilizadas
-
-
+## 🛠️ Tecnologias Utilizadas
 
 | Tecnologia | Finalidade |
-
 | :--- | :--- |
+| **Python 3.10+** | Linguagem principal do projeto |
+| **Rich** | Interface CLI com tabelas, painéis e estilização |
+| **Pytest** | Testes automatizados |
+| **Pylint** | Análise estática e padronização do código |
+| **GitHub Actions** | Integração contínua (CI) |
 
-| \*\*Python 3.10+\*\* | Linguagem de programação principal |
+---
 
-| \*\*Rich\*\* | Biblioteca para interface CLI rica (tabelas, cores, painéis) |
+## 📂 Estrutura do Projeto
 
-| \*\*Pytest\*\* | Framework de testes automatizados |
-
-| \*\*Pylint\*\* | Análise estática de código (qualidade e padronização) |
-
-| \*\*GitHub Actions\*\* | Pipeline de Integração Contínua (CI/CD) |
-
-
-
-\## 📂 Estrutura do Projeto
-
+```bash
 remedio-na-hora/
-
 ├── .github/
-
-│ └── workflows/
-
-│ └── ci.yml # Pipeline de CI (Lint + Testes)
-
+│   └── workflows/
+│       └── ci.yml              # Pipeline de CI (lint + testes)
 ├── src/
-
-│ ├── init.py
-
-│ ├── models.py # Classes de domínio (Medicamento)
-
-│ ├── services.py # Lógica de negócio (CRUD)
-
-│ └── cli.py # Interface com Rich (Menu principal)
-
+│   ├── __init__.py
+│   ├── models.py               # Classes de domínio
+│   ├── services.py             # Lógica de negócio
+│   └── cli.py                  # Interface de linha de comando
 ├── tests/
-
-│ ├── init.py
-
-│ └── test\_services.py # Testes automatizados (5 casos)
-
+│   ├── __init__.py
+│   └── test_services.py        # Testes automatizados
 ├── .gitignore
-
-├── .pylintrc # Configuração do Pylint
-
-├── requirements.txt # Dependências do projeto
-
-├── VERSION # Versionamento semântico
-
+├── .pylintrc                   # Configurações do Pylint
+├── requirements.txt            # Dependências do projeto
+├── VERSION                     # Controle de versão
 └── README.md
-
-
-\## 🚀 Instruções de Instalação
-
-
-
-\### Pré-requisitos
-
-\- \*\*Python 3.8 ou superior\*\* instalado no sistema
-
-\- \*\*pip\*\* (gerenciador de pacotes do Python)
-
-\- \*\*Git\*\* (opcional, para clonar o repositório)
-
-
-
-\### Passo a Passo
-
-
-
-1\. \*\*Clone o repositório\*\* (ou baixe o ZIP):
-
-&#x20;  ```bash
-
-&#x20;  git clone https://github.com/ArthurAmaral17/remedio-na-hora.git
-
-&#x20;  cd remedio-na-hora
-
-
-
