@@ -76,10 +76,18 @@ pylint src tests
 1.0.0
 ```
 
-👨‍💻 Autor
+---
 
-Arthur Amaral
+## 👨‍💻 Autor
 
-📄 Licença
+<p align="center">
+  <strong>Arthur Amaral</strong>
+</p>
 
-MIT
+---
+
+## 📄 Licença
+
+<p align="center">
+  MIT
+</p>
