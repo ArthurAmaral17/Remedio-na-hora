@@ -112,15 +112,13 @@ remedio-na-hora/
 ├── demo.gif
 └── README.md
 
-## Demonstração do Projeto
-
 ## 🖥️ Demonstração
 
 Veja abaixo a aplicação em funcionamento diretamente no terminal:
 
-## 🖥️ Demonstração
-
-![Demonstração do sistema](demo.gif)
+<p align="center">
+  <img src="demo.gif" alt="Demonstração do sistema Remédio na Hora Certa" width="700">
+</p>
 
 ### 💡 Fluxo da aplicação
 
