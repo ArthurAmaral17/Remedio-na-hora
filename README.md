@@ -4,6 +4,7 @@
 🔗 [Clique aqui para acessar a aplicação](https://remedio-na-hora-da53fnmuojr6kthrbzq9d5.streamlit.app/)
 ---
 ![Demo da aplicação](demo.gif)
+![Demo da aplicação](demo2.gif)
 
 
 ## 📋 Descrição do Problema Real
