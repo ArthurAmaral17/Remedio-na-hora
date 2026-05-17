@@ -1,116 +1,125 @@
-# Remédio na Hora Certa
+#  Remédio na Hora Certa
 
-## Nome do Projeto
-Remédio na Hora Certa
-
-## Demonstração
-
-Abaixo está uma demonstração visual da aplicação em funcionamento:
-
-<p align="center">
-  <img src="./demo.gif" alt="Demonstração do Remédio na Hora Certa" width="700">
-</p>
+##  Acesse a aplicação online
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://remedio-na-hora-da53fnmuojr6kthrbzq9d5.streamlit.app/)
 
 ---
 
-## Descrição do Problema Real
+##  Descrição do Problema Real
+
 O esquecimento de horários de medicamentos é um problema real que pode comprometer a saúde e a qualidade de vida de muitas pessoas. Isso acontece com frequência entre idosos, cuidadores, pessoas com doenças crônicas e pacientes que fazem uso contínuo de remédios. A falta de controle pode causar doses esquecidas, administração duplicada, falhas no tratamento e agravamento do quadro clínico.
 
-## Proposta da Solução
-O projeto Remédio na Hora Certa foi desenvolvido para auxiliar no controle de medicamentos de forma simples e prática. A aplicação permite cadastrar remédios, visualizar a lista dos medicamentos registrados, marcar quais já foram tomados e remover registros quando necessário. A proposta é oferecer uma solução acessível e funcional para ajudar na organização da rotina de medicação.
+##  Proposta da Solução
 
-## Público-Alvo
+O **Remédio na Hora Certa** auxilia no controle de medicamentos de forma simples e prática. A aplicação permite cadastrar remédios, visualizar a lista dos medicamentos registrados, marcar quais já foram tomados, remover registros e consultar informações oficiais sobre medicamentos em tempo real.
+
+##  Público-Alvo
+
 - Idosos
 - Cuidadores
 - Pessoas com doenças crônicas
 - Pacientes em uso contínuo de medicamentos
-- Pessoas que precisam de um controle simples de remédios
 
-## Funcionalidades Principais
+---
+
+##  Funcionalidades
+
 - Cadastro de medicamentos com nome e horário
 - Listagem dos medicamentos cadastrados
 - Marcação de medicamento como tomado
 - Remoção de medicamento
-- Interface visual no terminal
+- ** Consulta de informações via API pública OpenFDA** (nome genérico, fabricante, finalidade e advertências)
+- Interface visual no terminal (CLI) e versão web (Streamlit)
 
-## Tecnologias Utilizadas
-- Python 3.10+
-- Rich
-- Pytest
-- Pylint
-- GitHub Actions
+##  Integração com API Pública
+
+A aplicação consome a **API pública OpenFDA** (`api.fda.gov`), mantida pelo governo dos Estados Unidos. A integração permite buscar informações sobre medicamentos em tempo real sem necessidade de cadastro ou chave de acesso.
+
 ---
 
-## 🚀 Instruções de Instalação
-Pré-requisitos
+##  Tecnologias Utilizadas
 
-Python 3.8 ou superior
+- Python 3.9+
+- Rich
+- Requests
+- Streamlit
+- Pytest
+- Pylint
+- GitHub Actions (CI/CD)
 
-pip (gerenciador de pacotes do Python)
+---
 
-Git (opcional)
+##  Instalação e Execução
 
-Passo a Passo
+### Pré-requisitos
+- Python 3.9 ou superior
+- pip
 
-Clone o repositório:
-git clone https://github.com/ArthurAmaral17/remedio-na-hora.git
+### Passo a Passo
 
-Acesse a pasta do projeto:
-cd remedio-na-hora
+```bash
+# Clone o repositório
+git clone https://github.com/ArthurAmaral17/Remedio-na-hora.git
 
-Crie e ative um ambiente virtual (recomendado):
-python -m venv venv
+# Acesse a pasta
+cd Remedio-na-hora
 
-No Windows:
-venv\Scripts\activate
+# Instale as dependências
+pip3 install rich pytest requests streamlit pylint
 
-No Mac/Linux:
-source venv/bin/activate
+# Execute o CLI
+python3 -m src.cli
 
-Instale as dependências:
-pip install -r requirements.txt
+# Ou execute a versão web
+streamlit run app_web.py
+```
 
-## 🖥️ Instruções de Execução
-Com o ambiente virtual ativado e estando na raiz do projeto, execute:
+---
 
-python -m src.cli
+##  Testes
 
-O sistema abrirá um menu interativo com as seguintes opções:
+O projeto possui **10 testes automatizados** — 5 unitários e 5 de integração.
 
-1 - Adicionar novo medicamento
+```bash
+python3 -m pytest tests/ -v
+```
 
-2 - Listar medicamentos cadastrados
+Saída esperada: 10 testes passando 
 
-3 - Marcar medicamento como tomado
+---
 
-4 - Remover medicamento
+##  Lint
 
-5 - Sair do sistema
-
-## 🧪 Instruções para Rodar os Testes
-O projeto possui 5 testes automatizados validando os principais comportamentos do sistema.
-
-Para executá-los, use:
-
-pytest tests/ -v
-
-Saída esperada: 5 testes passando com sucesso (todos PASSED).
-
-## 🔍 Instruções para Rodar o Lint
-A qualidade do código é verificada com Pylint (nota atual: 8.17/10).
-
-Para executar a análise estática:
-
+```bash
 pylint src
+```
 
-A configuração personalizada está no arquivo .pylintrc na raiz do projeto.
+---
 
-## Versão Atual
-**1.0.0**
+##  Estrutura do Projeto
 
-## Nome do Autor
+```
+Remedio-na-hora/
+├── src/
+│   ├── cli.py          # Interface de linha de comando
+│   ├── services.py     # Lógica de negócio
+│   ├── models.py       # Modelo de dados
+│   └── drug_info.py    # Integração com API OpenFDA
+├── tests/
+│   ├── test_services.py         # Testes unitários
+│   └── test_integracao_api.py   # Testes de integração
+├── app_web.py          # Versão web (Streamlit)
+├── requirements.txt
+└── README.md
+```
+
+---
+
+##  Autor
+
 **Arthur Amaral dos Santos**
 
-## Link do Repositório Público
+##  Links
 
-[GitHub - Remédio na Hora Certa](https://github.com/ArthurAmaral17/remedio-na-hora)
+- [Repositório GitHub](https://github.com/ArthurAmaral17/Remedio-na-hora)
+- [Aplicação Online](https://remedio-na-hora-da53fnmuojr6kthrbzq9d5.streamlit.app/)
