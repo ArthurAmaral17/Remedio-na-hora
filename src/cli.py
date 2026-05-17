@@ -5,6 +5,7 @@ from rich.panel import Panel
 from rich.prompt import Prompt, Confirm
 
 from src.services import ControleMedicamentos
+from src.drug_info import buscar_info_medicamento
 
 console = Console()
 controle = ControleMedicamentos()
@@ -40,7 +41,8 @@ def menu_principal():
         "[2] [bold cyan]Listar[/bold cyan] medicamentos\n"
         "[3] [bold blue]Marcar como tomado[/bold blue]\n"
         "[4] [bold red]Remover[/bold red] medicamento\n"
-        "[5] [bold yellow]Sair[/bold yellow]",
+        "[5] [bold magenta]Buscar informações[/bold magenta] do remédio (API)\n"
+        "[6] [bold yellow]Sair[/bold yellow]",
         title="Menu Principal",
         border_style="white"
     ))
@@ -89,13 +91,48 @@ def remover_medicamento():
         console.print("[red]❌ Entrada inválida ou ID inexistente![/red]")
     Prompt.ask("\nPressione ENTER para continuar")
 
+def buscar_info_remedio():
+    """Busca informações sobre um medicamento na API pública OpenFDA."""
+    cabecalho()
+    console.print(Panel(
+        "[bold magenta]🔍 Busca de Informações — API OpenFDA[/bold magenta]\n"
+        "[dim]Consulta dados públicos sobre medicamentos em tempo real[/dim]",
+        border_style="magenta"
+    ))
+
+    nome = Prompt.ask("\nDigite o nome do medicamento (em inglês ou genérico)")
+
+    console.print("\n[dim]🌐 Consultando API OpenFDA...[/dim]")
+    info = buscar_info_medicamento(nome)
+
+    if info is None:
+        console.print(
+            "\n[yellow]⚠️  Nenhuma informação encontrada para este medicamento.[/yellow]\n"
+            "[dim]Dica: tente o nome genérico em inglês (ex: paracetamol, ibuprofen, amoxicillin)[/dim]"
+        )
+    else:
+        table = Table(title=f"📄 Informações: {nome.upper()}", border_style="magenta")
+        table.add_column("Campo", style="bold cyan", min_width=16)
+        table.add_column("Informação", min_width=40)
+
+        table.add_row("Nome Genérico", info["nome_generico"])
+        table.add_row("Fabricante", info["fabricante"])
+        table.add_row("Finalidade", info["finalidade"])
+        table.add_row("Advertências", info["advertencias"])
+
+        console.print("\n")
+        console.print(table)
+        console.print("\n[dim]Fonte: OpenFDA — dados públicos do governo dos EUA (api.fda.gov)[/dim]")
+
+    Prompt.ask("\nPressione ENTER para continuar")
+
 def main():
     while True:
         console.clear()
         cabecalho()
         exibir_tabela()
         menu_principal()
-        opcao = Prompt.ask("Escolha uma opção", choices=["1","2","3","4","5"], default="2")
+        opcao = Prompt.ask("Escolha uma opção", choices=["1","2","3","4","5","6"], default="2")
 
         if opcao == "1":
             adicionar_medicamento()
@@ -106,6 +143,8 @@ def main():
         elif opcao == "4":
             remover_medicamento()
         elif opcao == "5":
+            buscar_info_remedio()
+        elif opcao == "6":
             console.print("[yellow]Saindo... Obrigado por usar![/yellow]")
             sys.exit(0)
 
