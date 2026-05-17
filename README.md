@@ -1,20 +1,19 @@
-#  Remédio na Hora Certa
+# 💊 Remédio na Hora Certa
 
-##  Acesse a aplicação online
-
-🔗 [Clique aqui para acessar a aplicação](https://remedio-na-hora-da53fnmuojr6kthrbzq9d5.streamlit.app/)
+## 🌐 Acesse a aplicação online
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://remedio-na-hora-da53fnmuojr6kthrbzq9d5.streamlit.app/)
 
 ---
 
-##  Descrição do Problema Real
+## 📋 Descrição do Problema Real
 
 O esquecimento de horários de medicamentos é um problema real que pode comprometer a saúde e a qualidade de vida de muitas pessoas. Isso acontece com frequência entre idosos, cuidadores, pessoas com doenças crônicas e pacientes que fazem uso contínuo de remédios. A falta de controle pode causar doses esquecidas, administração duplicada, falhas no tratamento e agravamento do quadro clínico.
 
-##  Proposta da Solução
+## 💡 Proposta da Solução
 
 O **Remédio na Hora Certa** auxilia no controle de medicamentos de forma simples e prática. A aplicação permite cadastrar remédios, visualizar a lista dos medicamentos registrados, marcar quais já foram tomados, remover registros e consultar informações oficiais sobre medicamentos em tempo real.
 
-##  Público-Alvo
+## 👥 Público-Alvo
 
 - Idosos
 - Cuidadores
@@ -23,22 +22,22 @@ O **Remédio na Hora Certa** auxilia no controle de medicamentos de forma simple
 
 ---
 
-##  Funcionalidades
+## ✨ Funcionalidades
 
 - Cadastro de medicamentos com nome e horário
 - Listagem dos medicamentos cadastrados
 - Marcação de medicamento como tomado
 - Remoção de medicamento
-- ** Consulta de informações via API pública OpenFDA** (nome genérico, fabricante, finalidade e advertências)
+- **🆕 Consulta de informações via API pública OpenFDA** (nome genérico, fabricante, finalidade e advertências)
 - Interface visual no terminal (CLI) e versão web (Streamlit)
 
-##  Integração com API Pública
+## 🔌 Integração com API Pública
 
 A aplicação consome a **API pública OpenFDA** (`api.fda.gov`), mantida pelo governo dos Estados Unidos. A integração permite buscar informações sobre medicamentos em tempo real sem necessidade de cadastro ou chave de acesso.
 
 ---
 
-##  Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 - Python 3.9+
 - Rich
@@ -50,7 +49,7 @@ A aplicação consome a **API pública OpenFDA** (`api.fda.gov`), mantida pelo g
 
 ---
 
-##  Instalação e Execução
+## 🚀 Instalação e Execução
 
 ### Pré-requisitos
 - Python 3.9 ou superior
@@ -77,7 +76,7 @@ streamlit run app_web.py
 
 ---
 
-##  Testes
+## 🧪 Testes
 
 O projeto possui **10 testes automatizados** — 5 unitários e 5 de integração.
 
@@ -85,11 +84,11 @@ O projeto possui **10 testes automatizados** — 5 unitários e 5 de integraçã
 python3 -m pytest tests/ -v
 ```
 
-Saída esperada: 10 testes passando 
+Saída esperada: 10 testes passando ✅
 
 ---
 
-##  Lint
+## 🔍 Lint
 
 ```bash
 pylint src
@@ -97,7 +96,7 @@ pylint src
 
 ---
 
-##  Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
 Remedio-na-hora/
@@ -116,11 +115,11 @@ Remedio-na-hora/
 
 ---
 
-##  Autor
+## 👤 Autor
 
 **Arthur Amaral dos Santos**
 
-##  Links
+## 🔗 Links
 
 - [Repositório GitHub](https://github.com/ArthurAmaral17/Remedio-na-hora)
 - [Aplicação Online](https://remedio-na-hora-da53fnmuojr6kthrbzq9d5.streamlit.app/)
