@@ -1,7 +1,8 @@
 #  Remédio na Hora Certa
 
 ##  Acesse a aplicação online
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://remedio-na-hora-da53fnmuojr6kthrbzq9d5.streamlit.app/)
+
+🔗 [Clique aqui para acessar a aplicação](https://remedio-na-hora-da53fnmuojr6kthrbzq9d5.streamlit.app/)
 
 ---
 
