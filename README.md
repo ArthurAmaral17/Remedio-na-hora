@@ -3,6 +3,8 @@
 ## 🌐 Acesse a aplicação online
 🔗 [Clique aqui para acessar a aplicação](https://remedio-na-hora-da53fnmuojr6kthrbzq9d5.streamlit.app/)
 ---
+![Demo da aplicação](demo.gif)
+
 
 ## 📋 Descrição do Problema Real
 
