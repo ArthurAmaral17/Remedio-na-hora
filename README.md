@@ -1,7 +1,5 @@
 # 💊 Remédio na Hora Certa
 
-## 🌐 Acesse a aplicação online
-
 ---
 ![Demo da aplicação](demo.gif)
 ---
